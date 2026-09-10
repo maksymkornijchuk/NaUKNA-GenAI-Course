@@ -1,0 +1,220 @@
+<quiz>
+
+  <question type="truefalse">
+    <name><text>T2.001: Зміна IT-ринку під впливом ШІ</text></name>
+    <questiontext format="html"><text><![CDATA[<p>ШІ скорочує потребу в усіх ІТ-фахівцях, тому світовий ІТ-ринок зменшується.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Ринок не зникає, а структурно змінюється: зменшується частка рутинної роботи, тоді як зростає попит на складніші інженерні напрями. Будь ласка, перегляньте розділ лекції, що стосується трансформації IT-ринку, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[ШІ змінює структуру попиту на фахівців, а не скасовує потребу в програмній інженерії. Особливо зростає значення кібербезпеки, хмарних технологій та AI-enablement.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.002: Можливості агентів із MCP</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яка можливість з’явилася у ШІ-агентів на етапі Tools і MCP?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Підключатися до баз даних, запускати тести та створювати Pull Requests.]]></text>
+      <feedback format="html"><text><![CDATA[На цьому етапі модель отримує інструменти для виконання дій у робочому середовищі, а не лише для генерації тексту чи коду.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Лише пропонувати окремі рядки коду в поточному файлі.]]></text>
+      <feedback format="html"><text><![CDATA[Це описує ранній рівень AI-асистента в IDE, коли інструмент ще не виконував дії в зовнішніх системах. Будь ласка, перегляньте розділ лекції, що стосується еволюції взаємодії з ШІ, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Лише пояснювати помилки у відкритих файлах проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[Така взаємодія характерна для чату в середовищі розробки, але вона не охоплює автономне використання інструментів. Будь ласка, перегляньте розділ лекції, що стосується еволюції взаємодії з ШІ, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Лише копіювати код із вебчату до IDE вручну.]]></text>
+      <feedback format="html"><text><![CDATA[За такого підходу всі дії з перенесення коду виконує людина, а модель не має доступу до робочого середовища. Будь ласка, перегляньте розділ лекції, що стосується еволюції взаємодії з ШІ, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.003: Основа Spec-Driven Development</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що є вихідною точкою в Spec-Driven Development?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Формалізована та перевірювана специфікація.]]></text>
+      <feedback format="html"><text><![CDATA[Специфікація задає межі, критерії приймання й очікуваний результат, тому ШІ отримує керований контекст для роботи.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Розпливчасте побажання замовника.]]></text>
+      <feedback format="html"><text><![CDATA[Нечітке формулювання змушує модель самостійно припускати бізнес-логіку, що підвищує ризик помилок. Будь ласка, перегляньте розділ лекції, що стосується Spec-Driven Development, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автоматичне прийняття всіх змін моделі.]]></text>
+      <feedback format="html"><text><![CDATA[Бездумне прийняття змін є ознакою підходу vibe coding і не забезпечує інженерного контролю. Будь ласка, пе��егляньте розділ лекції, що стосується Spec-Driven Development, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Випадковий набір файлів із репозиторію.]]></text>
+      <feedback format="html"><text><![CDATA[Контекст для моделі має бути точним і відповідати архітектурі та обмеженням конкретного завдання. Будь ласка, перегляньте розділ лекції, що стосується Spec-Driven Development, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.004: Причина AI-slop</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що найчастіше спричиняє AI-slop у виробничому проєкті?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Відсутність чітких вимог до завдання.]]></text>
+      <feedback format="html"><text><![CDATA[Коли вимоги нечіткі, модель починає самостійно припускати потрібну бізнес-логіку, що може створювати впевнені, але помилкові рішення.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Наявність критеріїв приймання.]]></text>
+      <feedback format="html"><text><![CDATA[Критерії приймання допомагають перевірити результат і зменшують невизначеність у роботі моделі. Будь ласка, перегляньте розділ лекції, що стосується причин AI-slop, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Використання автоматизованих тестів.]]></text>
+      <feedback format="html"><text><![CDATA[Тести є одним із механізмів валідації; проблема виникає тоді, коли їхні умови можна неконтрольовано послабити. Будь ласка, перегляньте розділ лекції, що стосується причин AI-slop, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Застосування правил лінтерів.]]></text>
+      <feedback format="html"><text><![CDATA[Правила лінтерів належать до гейтів якості та допомагають виявляти проблеми в коді. Будь ласка, перегляньте розділ лекції, що стосується причин AI-slop, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.005: Роль критеріїв приймання</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Для чого в специфікації використовують Acceptance Criteria?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Щоб перевірити, чи відповідає результат вимогам.]]></text>
+      <feedback format="html"><text><![CDATA[Критерії приймання перетворюють очікування щодо результату на умови, які можна перевірити тестами або рев’ю.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб збільшити кількість згенерованого коду.]]></text>
+      <feedback format="html"><text><![CDATA[Мета специфікації полягає у зменшенні невизначеності та контролі результату, а не у збільшенні обсягу коду. Будь ласка, перегляньте розділ лекції, що стосується формування вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб скасувати перевірку коду інженером.]]></text>
+      <feedback format="html"><text><![CDATA[Автоматизована перевірка доповнює інженерний контроль, особливо для критичних частин системи. Будь ласка, перегляньте розділ лекції, що стосується формування вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб замінити правила архітектури проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[Критерії приймання описують очікуваний результат завдання, а архітектурні правила визначають інші обмеження системи. Будь ласка, перегляньте розділ лекції, що стосується формування вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T2.006: Відповідальність за рішення ШІ</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Якщо інженер затвердив згенероване ШІ рішення, відповідальність за наслідки цього рішення несе інженер.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[ШІ може допомагати з аналізом і генерацією коду, але не є суб’єктом професійної чи юридичної відповідальності. Її несе людина, яка ухвалила та затвердила рішення.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Затвердження рішення означає прийняття відповідальності за його наслідки, зокрема за можливі витоки даних або фінансові збитки. Будь ласка, перегляньте розділ лекції, що стосується відповідальності інженера, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T2.007: Архітектурні компроміси</text></name>
+    <questiontext format="html"><text><![CDATA[<p>ШІ може запропонувати архітектурні варіанти, але остаточний вибір між ними робить інженер з урахуванням бізнес-обмежень.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Архітектурне рішення завжди є балансом між вартістю, швидкістю, масштабованістю, ризиками та можливостями команди. Саме тому остаточне рішення ��отребує людського судження.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Вибір архітектури залежить не лише від технічних характеристик, а й від бюджету, навантаження та контексту конкретного продукту. Будь ласка, перегляньте розділ лекції, що стосується архітектурних компромісів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.008: Поняття Agent Harness</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що таке Agent Harness?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Програмне оточення моделі з інструментами, правилами, контекстом і гейтами якості.]]></text>
+      <feedback format="html"><text><![CDATA[Обв’язка агента перетворює мовну модель на керований елемент інженерного процесу, надаючи їй контекст, інструменти та обмеження.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Модель для генерації лише шаблонного коду.]]></text>
+      <feedback format="html"><text><![CDATA[Agent Harness не є окремою моделлю; це середовище, у якому модель може працювати за визначеними правилами. Будь ласка, перегляньте розділ лекції, що стосується Agent Harness, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Сховище для тривалого зберігання даних.]]></text>
+      <feedback format="html"><text><![CDATA[Сховища даних можуть бути доступними агенту як інструмент, але не визначають сутність його програмного оточення. Будь ласка, перегляньте розділ лекції, що стосується Agent Harness, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Метод ручного копіювання коду з вебчату.]]></text>
+      <feedback format="html"><text><![CDATA[Ручне копіювання коду належить до раннього етапу використання ШІ й не передбачає системи інструментів та контролю. Будь ласка, перегляньте розділ лекції, що стосується Agent Harness, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.009: Призначення гейтів якості</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке головне призначення Quality Gates у процесі розробки?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Не допустити дефектного коду до продакшну.]]></text>
+      <feedback format="html"><text><![CDATA[Гейти якості автоматично перевіряють код через лінтери, тести, security-скани та рев’ю, зупиняючи зміни з виявленими проблемами.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Прискорити написання коду без перевірок.]]></text>
+      <feedback format="html"><text><![CDATA[Швидкість генерації без валідації не гарантує надійності результату, особливо у критичних модулях системи. Будь ласка, перегляньте розділ лекції, що стосується гейтів якості, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінити вимоги та критерії приймання.]]></text>
+      <feedback format="html"><text><![CDATA[Гейти перевіряють результат, але для такої перевірки потрібні заздалегідь визначені вимоги й очікуваний результат. Будь ласка, перегляньте розділ лекції, що стосується гейтів якості, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Усунути потребу в Human-in-the-loop.]]></text>
+      <feedback format="html"><text><![CDATA[Інженер має особисто перевіряти найбільш критичні зміни, зокрема у модулях аутентифікації та фінансових транзакціях. Будь ласка, перегляньте розділ лекції, що стосується гейтів якості, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T2.010: Оптимізація витрат на моделі</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Як Model Routing допомагає зменшити витрати токенів?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Дорогу модель використовують для складного планування, а дешевшу — для рутинних підзадач.]]></text>
+      <feedback format="html"><text><![CDATA[Різні завдання потребують різної потужності моделі, тому обґрунтований розподіл запитів зменшує вартість виконання задачі.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Дорогу модель використовують для кожної підзадачі.]]></text>
+      <feedback format="html"><text><![CDATA[Використання найпотужнішої моделі для простих операцій збільшує витрати без пропорційного покращення результату. Будь ласка, перегляньте розділ лекції, що стосується токеноміки, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Кожне завдання виконують усіма доступними моделями.]]></text>
+      <feedback format="html"><text><![CDATA[Паралельне використання моделей без потреби може дублювати витрати та не усувати проблему неясно сформульованої задачі. Будь ласка, перегляньте розділ лекції, що стосується токеноміки, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Для всіх завдань вимикають контекст проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[Якісний контекст зменшує кількість зайвих ітерацій моделі та допомагає уникати непотрібних витрат. Будь ласка, перегляньте розділ лекції, що стосується токеноміки, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
