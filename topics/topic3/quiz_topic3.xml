@@ -1,1 +1,283 @@
+<quiz>
 
+  <question type="multichoice">
+    <name><text>T3.001: Структурований промпт</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що найбільше підвищує передбачуваність відповіді LLM?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Чітке ТЗ із роллю, обмеженнями та структурою відповіді.]]></text>
+      <feedback format="html"><text><![CDATA[Чіткі вимоги звужують простір можливих відповідей моделі та допомагають отримати корисний інженерний результат.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Загальний запит без технічного контексту.]]></text>
+      <feedback format="html"><text><![CDATA[Розмитий запит залишає моделі занадто багато можливих напрямів генерації. Підказка: визначте елементи, які конкретизують завдання. Будь ласка, перегляньте розділ лекції, що стосується ментальної моделі LLM як «ерудованого стажера», щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Максимально довга відповідь без заданого формату.]]></text>
+      <feedback format="html"><text><![CDATA[Великий обсяг відповіді сам по собі не визначає її зміст, структуру та відповідність меті. Підказка: зверніть увагу на роль вимог до формату. Будь ласка, перегляньте розділ лекції, що стосується ментальної моделі LLM як «ерудованого стажера», щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Відмова від критеріїв прийняття результату.]]></text>
+      <feedback format="html"><text><![CDATA[Без критеріїв важко оцінити, чи відповідає результат поставленому завданню. Підказка: пригадайте аналогію з технічним завданням для стажера. Будь ласка, перегляньте розділ лекції, що стосується ментальної моделі LLM як «ерудованого стажера», щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.002: Генерація тексту LLM</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що мовна модель обчислює під час генерації тексту?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Умовну ймовірність появи наступного токена.]]></text>
+      <feedback format="html"><text><![CDATA[LLM формує відповідь послідовно: на кожному кроці вона оцінює ймовірності можливих наступних токенів.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Фактичну істинність кожного речення.]]></text>
+      <feedback format="html"><text><![CDATA[Модель працює з імовірнісними закономірностями тексту, а не виконує автоматичну перевірку фактів. Підказка: пригадайте послідовність етапів генерації. Будь ласка, перегляньте розділ лекції, що стосується прогнозування наступного токена, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Особистий досвід автора запиту.]]></text>
+      <feedback format="html"><text><![CDATA[Модель не має власного життєвого досвіду; вона використовує текстовий контекст і закономірності навчальних даних. Підказка: зверніть увагу на метафору «ерудованого стажера». Будь ласка, перегляньте розділ лекції, що стосується прогнозування наступного токена, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Кількість абзаців у майбутній відповіді.]]></text>
+      <feedback format="html"><text><![CDATA[Кількість абзаців може задаватися форматом промпта, але це не базовий механізм генерації. Підказка: знайдіть у лекції математичний принцип роботи LLM. Будь ласка, перегляньте розділ лекції, що стосується прогнозування наступного токена, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.003: Токенізація українського тексту</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яка особливість українського тексту важлива під час планування витрат токенів?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Він часто займає у 1,5–2 рази більше токенів, ніж аналогічний англійський текст.]]></text>
+      <feedback format="html"><text><![CDATA[Особливості кодування кирилиці впливають на токенізацію, тому мову інструкцій варто враховувати під час оптимізації промптів.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Він завжди займає менше токенів, ніж англійський текст.]]></text>
+      <feedback format="html"><text><![CDATA[Для кирилиці характерна інша тенденція, пов’язана зі способом розбиття тексту на токени. Підказка: порівняйте приклади українського й англійського речень. Будь ласка, перегляньте розділ лекції, що стосується токенізації, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Він займає стільки самих токенів, як англійський текст.]]></text>
+      <feedback format="html"><text><![CDATA[Однаковий зміст не гарантує однакової кількості токенів у різних мовах. Підказка: пригадайте вплив кирилиці на токеноміку. Будь ласка, перегляньте розділ лекції, що стосується токенізації, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Він не розбивається на токени через кирилицю.]]></text>
+      <feedback format="html"><text><![CDATA[Модель обробляє кирилицю, але її токенізація може бути менш економною. Підказка: токени можуть бути словами, частинами слів або символами. Будь ласка, перегляньте розділ лекції, що стосується токенізації, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T3.004: Температура 0.0</text></name>
+    <questiontext format="html"><text><![CDATA[<p>За температури <code>0.0</code> модель обирає токен із найвищою ймовірністю.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Низька температура зменшує випадковість вибору, тому цей режим корисний для коду, SQL-запитів і структурованих форматів на кшталт JSON.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає в неправильному розумінні зв’язку між температурою та випадковістю генерації. Підказка: пригадайте, що відбувається з вибором альтернативних токенів за низьких значень параметра. Будь ласка, перегляньте розділ лекції, що стосується температури та Top-P, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.005: Контекстне вікно</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що описує контекстне вікно LLM?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Обсяг токенів, який модель утримує в увазі під час обробки.]]></text>
+      <feedback format="html"><text><![CDATA[До цього обсягу входять поточний запит і попередня історія діалогу, тому контекстне вікно можна порівняти з оперативною пам’яттю моделі.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Кількість параметрів моделі під час навчання.]]></text>
+      <feedback format="html"><text><![CDATA[Параметри моделі та обсяг доступної історії діалогу описують різні характеристики. Підказка: зверніть увагу на аналогію з оперативною пам’яттю. Будь ласка, перегляньте розділ лекції, що стосується контекстного вікна та керування сесіями, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Максимальну довжину одного слова у запиті.]]></text>
+      <feedback format="html"><text><![CDATA[Обмеження стосується не окремого слова, а загального обсягу тексту, який обробляється в сесії. Підказка: пригадайте одиницю вимірювання цього обсягу. Будь ласка, перегляньте розділ лекції, що стосується контекстного вікна та керування сесіями, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Кількість варіантів відповіді для користувача.]]></text>
+      <feedback format="html"><text><![CDATA[Кількість варіантів відповіді не визначає межі пам’яті моделі в межах діалогу. Підказка: подумайте, що саме модель має «тримати у фокусі». Будь ласка, перегляньте розділ лекції, що стосується контекстного вікна та керування сесіями, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.006: Системний промпт</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке основне призначення системного промпта?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Задавати незмінні правила, обмеження та стиль для всієї сесії.]]></text>
+      <feedback format="html"><text><![CDATA[Системний промпт виконує роль «конституції» взаємодії: він визначає загальні межі поведінки моделі.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Передавати одне окреме завдання від користувача.]]></text>
+      <feedback format="html"><text><![CDATA[Окреме завдання має іншу роль у взаємодії з моделлю та може змінюватися між повідомленнями. Підказка: порівняйте разове завдання з правилами для всієї сесії. Будь ласка, перегляньте розділ лекції, що стосується системного промпта, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Збільшувати розмір контекстного вікна моделі.]]></text>
+      <feedback format="html"><text><![CDATA[Інструкція не змінює технічну межу токенів, доступних моделі. Підказка: відокремте правила поведінки від характеристик контекстного вікна. Будь ласка, перегляньте розділ лекції, що стосується системного промпта, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Перевіряти фактичну точність кожної відповіді.]]></text>
+      <feedback format="html"><text><![CDATA[Інструкція може вимагати обережності, але сама по собі не є механізмом автоматичної перевірки фактів. Підказка: пригадайте, які аспекти поведінки задає системний рівень. Будь ласка, перегляньте розділ лекції, що стосується системного промпта, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.007: Елемент A у C.R.E.A.T.E.</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що означає елемент A — Adjustment у фреймворку C.R.E.A.T.E.?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Обмеження: що потрібно врахувати або виключити.]]></text>
+      <feedback format="html"><text><![CDATA[Обмеження задають межі результату та допомагають уникнути небажаного змісту або формату.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Приклади бажаного результату.]]></text>
+      <feedback format="html"><text><![CDATA[Приклади мають окреме призначення у фреймворку та допомагають показати зразок відповіді. Підказка: знайдіть компонент, пов’язаний із правилами та винятками. Будь ласка, перегляньте розділ лекції, що стосується фреймворку C.R.E.A.T.E., щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Формат виводу результату.]]></text>
+      <feedback format="html"><text><![CDATA[Формат відповіді належить до іншого елемента фреймворку. Підказка: розрізняйте вимогу до структури результату та обмеження його змісту. Будь ласка, перегляньте розділ лекції, що стосується фреймворку C.R.E.A.T.E., щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Інтерактивні правила діалогу.]]></text>
+      <feedback format="html"><text><![CDATA[Правила покрокової взаємодії належать до іншої частини фреймворку. Підказка: пригадайте елемент, що відповідає за додаткові інструкції для діалогу. Будь ласка, перегляньте розділ лекції, що стосується фреймворку C.R.E.A.T.E., щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.008: Markdown у промпті</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Як Markdown допомагає LLM точніше виконувати інструкції?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Створює семантичні межі між важливими частинами промпта.]]></text>
+      <feedback format="html"><text><![CDATA[Заголовки, списки, жирний текст і роздільники роблять структуру вимог помітнішою для механізмів уваги моделі.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автоматично перевіряє правильність коду.]]></text>
+      <feedback format="html"><text><![CDATA[Розмітка організовує інформацію, але не виконує автоматичне тестування програмного коду. Підказка: пригадайте роль заголовків і списків у промпті. Будь ласка, перегляньте розділ лекції, що стосується Markdown як інструменту керування увагою моделі, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Збільшує кількість параметрів моделі.]]></text>
+      <feedback format="html"><text><![CDATA[Форматування тексту не змінює архітектуру або розмір моделі. Підказка: зосередьтеся на впливі розмітки на структуру вхідного запиту. Будь ласка, перегляньте розділ лекції, що стосується Markdown як інструменту керування увагою моделі, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінює потребу в чіткому завданні.]]></text>
+      <feedback format="html"><text><![CDATA[Навіть добре оформлений текст не компенсує відсутність ролі, контексту та конкретної інструкції. Підказка: Markdown підсилює структуру, а не створює зміст завдання. Будь ласка, перегляньте розділ лекції, що стосується Markdown як інструменту керування увагою моделі, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.009: Патерн «Інтерв’юер»</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що має зробити AI-асистент за патерном «Інтерв’юер» перед створенням фінального артефакту?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Зібрати уточнення та узгодити контекст через діалог.]]></text>
+      <feedback format="html"><text><![CDATA[Покроковий збір вимог зменшує кількість прогалин у вхідних даних і ризик галюцинацій у фінальному результаті.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Одразу згенерувати повне рішення.]]></text>
+      <feedback format="html"><text><![CDATA[Передчасна генерація змушує модель заповнювати відсутні дані власними припущеннями. Підказка: пригадайте послідовність «спочатку запитати, потім відповідати». Будь ласка, перегляньте розділ лекції, що стосується інтерактивних асистентів і покрокового збору контексту, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Скоротити запит користувача до одного речення.]]></text>
+      <feedback format="html"><text><![CDATA[Скорочення може вилучити важливі вимоги, але не забезпечує їх уточнення. Підказка: зверніть увагу на роботу з білими плямами у вимогах. Будь ласка, перегляньте розділ лекції, що стосується інтерактивних асистентів і покрокового збору контексту, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Відмовитися від аналізу суперечностей у даних.]]></text>
+      <feedback format="html"><text><![CDATA[Виявлення суперечностей є важливою частиною підготовки точного результату. Підказка: подумайте, як асистент має діяти за неповного контексту. Будь ласка, перегляньте розділ лекції, що стосується інтерактивних асистентів і покрокового збору контексту, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T3.010: Customer Profile у VPC</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Оберіть усі складові Customer Profile у Value Proposition Canvas.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text><![CDATA[Customer Profile описує контекст, потреби та мотивацію людини. Це допомагає проєктувати продукт не для абстрактної групи, а для конкретного профілю користувача.]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[Помилка виникає через змішування опису користувача з описом самого продукту. Підказка: розділіть елементи, що характеризують потреби людини, та елементи, що характеризують пропозицію продукту. Будь ласка, перегляньте розділ лекції, що стосується канви ціннісної пропозиції Value Proposition Canvas, щоб освіжити знання.]]></text></incorrectfeedback>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Customer Jobs — задачі користувача.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Pains — болі та ризики користувача.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Gains — очікувані вигоди користувача.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Products &amp; Services — функціонал продукту.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Pain Relievers — способи зменшення болю.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Gain Creators — способи створення вигоди.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
