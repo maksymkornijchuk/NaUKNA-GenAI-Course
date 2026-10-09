@@ -1,0 +1,284 @@
+<quiz>
+
+  <question type="multichoice">
+    <name><text>T4.001: Принцип Garbage In — Garbage Out</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Від чого насамперед залежить якість коду, архітектури та автотестів, згенерованих за підтримки ШІ?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Від точності та структурованості вхідних вимог.]]></text>
+      <feedback format="html"><text><![CDATA[Якісні вимоги дають моделі чіткий контекст, обмеження та критерії результату. Тому бізнес-вимоги й специфікації стають «вихідним кодом» високого рівня абстракції.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Від кількості кнопок у клієнтському інтерфейсі.]]></text>
+      <feedback format="html"><text><![CDATA[Кількість елементів інтерфейсу не визначає, наскільки коректно сформульовано завдання для розробки. Підказка: зверніть увагу на інформацію, яку команда передає моделі до початку генерації. Будь ласка, перегляньте розділ лекції, що стосується принципу Garbage In — Garbage Out, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Від довжини назви програмного продукту.]]></text>
+      <feedback format="html"><text><![CDATA[Назва продукту не описує його бізнес-логіку, межі функціоналу або умови коректної роботи. Підказка: пригадайте, що саме має бути точним і повним на вході. Будь ласка, перегляньте розділ лекції, що стосується принципу Garbage In — Garbage Out, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Від кількості учасників у команді розробки.]]></text>
+      <feedback format="html"><text><![CDATA[Розмір команди може впливати на організацію роботи, але не замінює чітких специфікацій. Підказка: зосередьтеся на зв’язку між вхідними даними та результатом генерації. Будь ласка, перегляньте розділ лекції, що стосується принципу Garbage In — Garbage Out, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.002: Шлях користувача</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що таке User Journey?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Лінійний хронологічний ланцюжок дій користувача від виникнення проблеми до результату.]]></text>
+      <feedback format="html"><text><![CDATA[User Journey показує послідовність кроків людини до досягнення мети та допомагає синхронізувати бізнес-процеси в продукті.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Перелік технічних завдань для створення бази даних.]]></text>
+      <feedback format="html"><text><![CDATA[Технічні завдання описують реалізацію системи, а не дії людини в межах продуктового сценарію. Підказка: зосередьтеся на тому, чий шлях і яку послідовність описує цей артефакт. Будь ласка, перегляньте розділ лекції, що стосується моделювання шляху користувача, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Список усіх можливих помилок у роботі застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[Помилки та виняткові ситуації можуть аналізуватися окремо, але цей артефакт насамперед фіксує рух до цілі. Підказка: пригадайте, з чого починається і чим завершується описаний процес. Будь ласка, перегляньте розділ лекції, що стосується моделювання шляху користувача, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Опис структури таблиць і зв’язків у базі даних.]]></text>
+      <feedback format="html"><text><![CDATA[Структура бази даних є технічним рішенням, тоді як тут ідеться про досвід і послідовні дії користувача. Підказка: відокремте бізнес-сценарій від деталей реалізації. Будь ласка, перегляньте розділ лекції, що стосується моделювання шляху користувача, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T4.003: Основний успішний шлях</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Happy Path описує сценарій, у якому користувач досягає мети без помилок і складних розгалужень.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Happy Path допомагає спочатку зафіксувати основну послідовність дій у продукті, а вже потім аналізувати помилки, винятки та альтернативні сценарії.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає у змішуванні основного сценарію з граничними випадками та альтернативними шляхами. Підказка: пригадайте, на якому сценарії інженери фокусуються на старті проєктування. Будь ласка, перегляньте розділ лекції, що стосується основного успішного шляху користувача, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.004: Карта користувацьких історій</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що таке User Story Map?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Двовимірний спосіб структурувати шлях користувача та пов’язані історії за пріоритетністю.]]></text>
+      <feedback format="html"><text><![CDATA[Карта історій зберігає зв’язок між діями користувача, функціоналом і пріоритетами команди. Вона допомагає визначити мінімальний набір історій для MVP.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Лінійний список технічних задач для розробки застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[Такий список не показує зв’язку між кроками користувача та пріоритетністю функцій. Підказка: пригадайте, скільки вимірів має карта історій і що вони відображають. Будь ласка, перегляньте розділ лекції, що стосується карти користувацьких історій, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Набір сценаріїв перевірки готової функції.]]></text>
+      <feedback format="html"><text><![CDATA[Сценарії перевірки визначають умови коректної роботи функції, але мають інше призначення. Підказка: зверніть увагу, який артефакт допомагає встановити межі MVP. Будь ласка, перегляньте розділ лекції, що стосується карти користувацьких історій, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Опис таблиць і зв’язків у базі даних.]]></text>
+      <feedback format="html"><text><![CDATA[Структура даних належить до технічного проєктування, а не до планування користувацьких потреб і пріоритетів. Підказка: відокремте бізнес-артефакти від деталей технічної реалізації. Будь ласка, перегляньте розділ лекції, що стосується карти користувацьких історій, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.005: Принцип Vertical Slice</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що означає принцип Vertical Slice під час розробки MVP?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Реалізацію однієї функції наскрізно через UI, API та базу даних.]]></text>
+      <feedback format="html"><text><![CDATA[Вертикальний зріз дає змогу отримати робочий функціонал уже на ранньому етапі, а не окремі незавершені частини системи.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Створення всіх таблиць бази даних перед розробкою інших частин системи.]]></text>
+      <feedback format="html"><text><![CDATA[Такий підхід концентрується лише на одному технічному шарі й не створює завершеної функції для користувача. Підказка: пригадайте, через скільки рівнів системи проходить одна «скибка пирога». Будь ласка, перегляньте розділ лекції, що стосується принципу вертикального зрізу, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Розробку всіх API-ендпоінтів перед створенням інтерфейсу.]]></text>
+      <feedback format="html"><text><![CDATA[Послідовна реалізація окремих шарів не забезпечує користувачеві готового наскрізного сценарію. Підказка: зверніть увагу на необхідність поєднати інтерфейс, бекенд і зберігання даних. Будь ласка, перегляньте розділ лекції, що стосується принципу вертикального зрізу, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Додавання другорядних функцій після створення головного екрана.]]></text>
+      <feedback format="html"><text><![CDATA[Наявність екрана не гарантує, що функція працює від дії користувача до збереження результату. Підказка: подумайте, який результат має бути доступний користувачеві після реалізації зрізу. Будь ласка, перегляньте розділ лекції, що стосується принципу вертикального зрізу, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.006: Межі MVP</text></name>
+    <questiontext format="html"><text><![CDATA[<p>За яким принципом функцію слід включати до MVP?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Вона необхідна для запуску першого наскрізного сценарію користувача.]]></text>
+      <feedback format="html"><text><![CDATA[MVP містить мінімальний набір функцій, який дає змогу користувачеві пройти ключовий сценарій і отримати основну цінність продукту.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Вона має найбільшу кількість візуальних елементів інтерфейсу.]]></text>
+      <feedback format="html"><text><![CDATA[Кількість елементів інтерфейсу не визначає важливість функції для основного сценарію. Підказка: зосередьтеся на тому, чи може користувач досягти своєї головної мети. Будь ласка, перегляньте розділ лекції, що стосується визначення меж MVP, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Вона потребує найбільше технічних задач для реалізації.]]></text>
+      <feedback format="html"><text><![CDATA[Складність реалізації не робить функцію обов’язковою для першої версії продукту. Підказка: відокремте важливість для користувача від обсягу технічної роботи. Будь ласка, перегляньте розділ лекції, що стосується визначення меж MVP, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Вона додає найбільше додаткових можливостей користувачу.]]></text>
+      <feedback format="html"><text><![CDATA[Додаткові можливості можуть бути корисними, але їх часто доцільно перенести до наступних релізів. Підказка: пригадайте значення поняття «мінімально життєздатний продукт». Будь ласка, перегляньте розділ лекції, що стосується визначення меж MVP, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.007: Формула User Story</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Оберіть усі частини канонічної формули користувацької історії.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text><![CDATA[Формула фіксує, хто отримує цінність, яку дію виконує та навіщо вона потрібна. Частина «Щоб» пов’язує функцію з реальною бізнес-потребою користувача.]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[Помилка полягає у змішуванні бізнес-вимоги з деталями її технічної реалізації. Підказка: користувацька історія описує роль, дію та цінність простою мовою, без передчасного проєктування коду. Будь ласка, перегляньте розділ лекції, що стосується формулювання користувацьких історій, щоб освіжити знання.]]></text></incorrectfeedback>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Як [хто / конкретна роль].]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Я хочу [що зробити / дія].]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[Щоб [навіщо / очікувана цінність].]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Через [який API-ендпоінт].]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[У таблиці [які поля бази даних].]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[За умови [який HTTP-статус].]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.008: Декомпозиція User Story</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Коли користувацьку історію потрібно розділити на кілька історій?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Коли вона містить кілька незалежних дій із різною логікою обробки.]]></text>
+      <feedback format="html"><text><![CDATA[Атомарні історії легше реалізовувати, тестувати та планувати. Розділення незалежних дій також допомагає точніше визначити межі кожної функції.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Коли вона описує одну дію конкретного користувача.]]></text>
+      <feedback format="html"><text><![CDATA[Одна чітка дія в межах ролі може становити окрему завершену історію. Підказка: зверніть увагу на кількість самостійних операцій у формулюванні. Будь ласка, перегляньте розділ лекції, що стосується декомпозиції користувацьких історій, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Коли вона містить очікувану цінність для користувача.]]></text>
+      <feedback format="html"><text><![CDATA[Пояснення очікуваної цінності є важливою частиною коректної користувацької історії. Підказка: пригадайте, яка частина формули пояснює мету дії. Будь ласка, перегляньте розділ лекції, що стосується декомпозиції користувацьких історій, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Коли вона сформульована без технічних термінів.]]></text>
+      <feedback format="html"><text><![CDATA[Відсутність технічних деталей відповідає призначенню користувацької історії, але не є ознакою потреби в поділі. Підказка: визначте, що саме робить історію надто складною. Будь ласка, перегляньте розділ лекції, що стосується декомпозиції користувацьких історій, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="matching">
+    <name><text>T4.009: Структура Given-When-Then</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Співвіднесіть частини сценарію Given-When-Then з їхнім призначенням.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>true</shuffleanswers>
+    <subquestion format="html">
+      <text><![CDATA[Given]]></text>
+      <answer><text><![CDATA[Вихідний стан системи або передумови до початку дії.]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[When]]></text>
+      <answer><text><![CDATA[Конкретна дія користувача в системі.]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[Then]]></text>
+      <answer><text><![CDATA[Очікувана реакція системи та зміна її стану.]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[]]></text>
+      <answer><text><![CDATA[Перелік технічних задач для реалізації функції.]]></text></answer>
+    </subquestion>
+    <correctfeedback format="html"><text><![CDATA[Структура Given-When-Then послідовно описує передумови, дію користувача та перевірюваний результат. Це робить критерії приймання однозначними й придатними для тестування.]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[Помилка виникає через змішування передумов, дії користувача та реакції системи. Підказка: прочитай��е сценарій як послідовність «що вже є → що робить користувач → що має статися». Будь ласка, перегляньте розділ лекції, що стосується поведінкових сценаріїв Given-When-Then, щоб освіжити знання.]]></text></incorrectfeedback>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T4.010: User Story і технічні задачі</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що команда робить із користувацькою історією перед початком розробки?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Декомпозує її на технічні задачі, необхідні для реалізації цінності користувача.]]></text>
+      <feedback format="html"><text><![CDATA[Користувацька історія описує потребу людини та очікувану цінність, а технічні задачі визначають конкретну роботу, потрібну для її реалізації.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Перетворює її на опис структури всіх таблиць бази даних.]]></text>
+      <feedback format="html"><text><![CDATA[Структура бази даних може бути частиною реалізації, але не охоплює всі роботи, необхідні для створення функції. Підказка: подумайте, які різні види роботи можуть знадобитися для реалізації однієї історії. Будь ласка, перегляньте розділ лекції, що стосується переходу від користувацьких історій до технічних задач, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінює її переліком усіх майбутніх функцій продукту.]]></text>
+      <feedback format="html"><text><![CDATA[Перелік майбутніх функцій не пояснює, як реалізувати конкретну цінність, описану в одній історії. Підказка: пригадайте місце User Story в ієрархії вимог. Будь ласка, перегляньте розділ лекції, що стосується переходу від користувацьких історій до технічних задач, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Додає до неї технічні терміни замість цінності для користувача.]]></text>
+      <feedback format="html"><text><![CDATA[Технічні деталі потрібні для планування реалізації, але вони не мають замінювати зрозумілий опис потреби користувача. Підказка: розділіть опис «навіщо потрібна функція» і опис «як команда її створить». Будь ласка, перегляньте розділ лекції, що стосується переходу від користувацьких історій до технічних задач, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
