@@ -1,0 +1,261 @@
+<quiz>
+
+  <question type="multichoice">
+    <name><text>T5.001: Пріоритет архітектури</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Чому архітектурні рішення потрібно зафіксувати до початку написання бізнес-логіки?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Зміна архітектурних рішень у готовій системі коштує значно дорожче, ніж переписування окремої функції.]]></text>
+      <feedback format="html"><text><![CDATA[Архітектура визначає сумісність форматів даних, структуру системи, правила авторизації та взаємодію компонентів. Помилки на цьому рівні створюють технічний борг, який складно усувати пізніше.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Архітектурні рішення повністю замінюють потребу писати код.]]></text>
+      <feedback format="html"><text><![CDATA[Документація та технічні рішення спрямовують розробку, але не реалізують функціональність самі по собі. Підказка: розрізняйте правила побудови системи та конкретні інструкції для її роботи. Будь ласка, перегляньте розділ лекції, що стосується ціни архітектурних рішень, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Архітектурні рішення потрібні лише після завершення всіх функцій.]]></text>
+      <feedback format="html"><text><![CDATA[Запізніле проєктування може виявити несумісність уже створених частин системи. Підказка: подумайте, що визначає спільні правила для фронтенду, бекенду та бази даних. Будь ласка, перегляньте розділ лекції, що стосується ціни архітектурних рішень, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Архітектурні рішення дають ШІ змогу самостійно змінювати вимоги.]]></text>
+      <feedback format="html"><text><![CDATA[Архітектура задає технічні межі реалізації, але не дає моделі права самовільно змінювати узгоджені вимоги. Підказка: пригадайте, що саме має бути зафіксовано перед генерацією коду. Будь ласка, перегляньте розділ лекції, що стосується ціни архітектурних рішень, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.002: Консольні агенти</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яка ключова перевага консольного AI-агента порівняно з роботою через вебчат?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Агент може напряму читати, створювати та змінювати файли в репозиторії.]]></text>
+      <feedback format="html"><text><![CDATA[Робота в терміналі зберігає зв’язок ШІ з реальною структурою проєкту. Агент також може запускати команди середовища й перевіряти результат своєї роботи.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Агент автоматично знає всі вимоги без доступу до документації.]]></text>
+      <feedback format="html"><text><![CDATA[Агент отримує контекст із файлів і наданих інструкцій, а не знає вимоги наперед. Підказка: зверніть увагу на те, де консольний інструмент бере інформацію про проєкт. Будь ласка, перегляньте розділ лекції, що стосується переходу від вебчату до термінальних агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Агент не потребує контролю змін через Git.]]></text>
+      <feedback format="html"><text><![CDATA[Контроль версій залишається важливим для аналізу, перевірки та фіксації змін у проєкті. Підказка: пригадайте, які можливості роботи з Git має термінальний агент. Будь ласка, перегляньте розділ лекції, що стосується переходу від вебчату до термінальних агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Агент може змінювати файли без обмежень і схвалення людини.]]></text>
+      <feedback format="html"><text><![CDATA[Режими роботи агента та правила репозиторію потрібні саме для контролю його дій. Підказка: пригадайте різницю між режимом планування та режимом виконання. Будь ласка, перегляньте розділ лекції, що стосується переходу від вебчату до термінальних агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T5.003: Plan Mode</text></name>
+    <questiontext format="html"><text><![CDATA[<p>У Plan Mode AI-агент може аналізувати файли репозиторію та формувати план, але не змінює файли без схвалення людини.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Режим планування дає змогу перевірити пропозиції агента, виявити суперечності та погодити послідовність дій до внесення змін у репозиторій.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає у змішуванні режиму планування з режимом виконання. Підказка: пригадайте, у якому режимі агент лише аналізує репозиторій і очікує явного схвалення плану. Будь ласка, перегляньте розділ лекції, що стосується режимів роботи термінального AI-агента, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.004: Requirements Digest</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Для чого створюють Requirements Digest?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Щоб виявити прогалини, бізнес-правила та невизначеності у вимогах до проєктування системи.]]></text>
+      <feedback format="html"><text><![CDATA[Такий аналіз допомагає знайти відкриті питання до початку розробки, коли їх можна вирішити з меншими витратами. Він також фіксує сутності, їхні стани та важливі припущення для MVP.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб написати бізнес-логіку для всіх користувацьких історій.]]></text>
+      <feedback format="html"><text><![CDATA[На цьому етапі команда ще аналізує вимоги та не переходить до реалізації функцій. Підказка: зверніть увагу на те, які недомовки потрібно знайти до початку проєктування. Будь ласка, перегляньте розділ лекції, що стосується системного аналізу вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб обрати дизайн усіх сторінок клієнтського інтерфейсу.]]></text>
+      <feedback format="html"><text><![CDATA[Візуальне проєктування інтерфейсу не є головною метою цього документа. Підказка: пригадайте, які типи інформації інженер шукає у вимогах перед вибором технічного рішення. Будь ласка, перегляньте розділ лекції, що стосується системного аналізу вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб налаштувати команди запуску застосунку в репозиторії.]]></text>
+      <feedback format="html"><text><![CDATA[Команди запуску належать до конфігурації проєкту, тоді як цей артефакт працює зі змістом вимог. Підказка: відокремте аналіз потреб системи від налаштування робочого середовища. Будь ласка, перегляньте розділ лекції, що стосується системного аналізу вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.005: Файл CLAUDE.md</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке призначення файлу <code>CLAUDE.md</code> у репозиторії?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Містити головні інструкції для AI-агента: мету проєкту, стек технологій, команди та правила роботи.]]></text>
+      <feedback format="html"><text><![CDATA[Цей файл виконує роль «паспорта» проєкту: він допомагає агенту працювати в межах узгодженого контексту та не вигадувати логіку за неясних вимог.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Зберігати всі таблиці та записи бази даних проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[Дані системи зберігаються в базі даних, а цей файл призначений для опису правил роботи агента. Підказка: пригадайте, яку інформацію ШІ має отримати перед виконанням задач у репозиторії. Будь ласка, перегляньте розділ лекції, що стосується налаштування AI-Harness у репозиторії, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Містити готовий код усіх API-ендпоінтів застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[Код API належить до бекенду, тоді як цей документ задає загальні інструкції та межі роботи ШІ. Підказка: відокремте реалізацію функцій від правил взаємодії агента з проєктом. Будь ласка, перегляньте розділ лекції, що стосується налаштування AI-Harness у репозиторії, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автоматично створювати коміти в Git без участі розробника.]]></text>
+      <feedback format="html"><text><![CDATA[Файл інструкцій не виконує дії самостійно та не скасовує контроль розробника за змінами. Підказка: зверніть увагу, чи описує <code>CLAUDE.md</code> команди й правила, чи виконує їх сам. Будь ласка, перегляньте розділ лекції, що стосується налаштування AI-Harness у репозиторії, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.006: Architecture Decision Record</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Для чого команда створює ADR-документ?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Щоб зафіксувати архітектурне рішення, його контекст, альтернативи та наслідки.]]></text>
+      <feedback format="html"><text><![CDATA[ADR зберігає обґрунтування вибору для всієї команди. Це допомагає зрозуміти, чому було обрано конкретний підхід і які компроміси він передбачає.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб описати сценарії тестування готової функції.]]></text>
+      <feedback format="html"><text><![CDATA[Сценарії тестування перевіряють поведінку системи, але не пояснюють вибір архітектурного підходу. Підказка: пригадайте, який документ містить варіанти рішення та їхні плюси й мінуси. Будь ласка, перегляньте розділ лекції, що стосується фіксації архітектурних рішень в ADR, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб зберігати облікові дані користувачів системи.]]></text>
+      <feedback format="html"><text><![CDATA[Облікові дані належать до даних застосунку, а не до документації про технічні рішення. Підказка: зверніть увагу на зміст стандартної структури ADR-документа. Будь ласка, перегляньте розділ лекції, що стосується фіксації архітектурних рішень в ADR, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Щоб автоматично генерувати код для всіх модулів застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[ADR може бути контекстом для генерації коду, але його головна функція — документувати рішення, а не створювати реалізацію. Підказка: розрізняйте архітектурний документ і програмний код. Будь ласка, перегляньте розділ лекції, що стосується фіксації архітектурних рішень в ADR, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T5.007: Архітектурні компроміси</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Вибір архітектури та технологій має враховувати навички команди, дедлайн, бюджет і умови запуску застосунку.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[В інженерії немає універсально найкращої технології. Раціональне рішення є компромісом, який відповідає конкретному контексту та ресурсам команди.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає в припущенні, що технологію можна обирати ізольовано від реальних умов проєкту. Підказка: пригадайте приклад команди студентів із коротким дедлайном і нульовим бюджетом. Будь ласка, перегляньте розділ лекції, що стосується архітектурних компромісів і ADR, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.008: Технічні контракти</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке головне призначення технічних контрактів системи?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Узгодити взаємодію компонентів системи через спільні специфікації даних і поведінки.]]></text>
+      <feedback format="html"><text><![CDATA[Технічні контракти зменшують розсинхронізацію між фронтендом, бекендом і базою даних. Наприклад, вони визначають формати полів, API-ендпоінти, правила доступу та коди відповідей.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінити перевірку роботи застосунку автоматичними тестами.]]></text>
+      <feedback format="html"><text><![CDATA[Специфікації допомагають визначити очікувану поведінку, але не виконують перевірки самостійно. Підказка: подумайте, що має бути узгоджено між компонентами ще до реалізації та тестування. Будь ласка, перегляньте розділ лекції, що стосується технічних контрактів системи, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Дозволити кожному компоненту самостійно обирати формат даних.]]></text>
+      <feedback format="html"><text><![CDATA[Незалежний вибір форматів створює несумісність між частинами системи. Підказка: пригадайте приклад, коли фронтенд і бекенд по-різному називають те саме поле. Будь ласка, перегляньте розділ лекції, що стосується технічних контрактів системи, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Зберігати копії всіх файлів проєкту в архітектурній документації.]]></text>
+      <feedback format="html"><text><![CDATA[Архітектурна документація описує структуру та правила взаємодії, а не дублює весь вміст репозиторію. Підказка: зверніть увагу на різницю між документацією про систему та її вихідним кодом. Будь ласка, перегляньте розділ лекції, що стосується технічних контрактів системи, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.009: Матриця простежуваності</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що пов’язує матриця простежуваності?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Користувацькі історії з компонентами реалізації та сценаріями тестування.]]></text>
+      <feedback format="html"><text><![CDATA[Матриця дає змогу простежити, як кожна вимога переходить у конкретні ендпоінти, сторінки, таблиці та тести. Вона також допомагає виявити зайву роботу, не пов’язану з жодною User Story.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Версії браузерів із параметрами серверного обладнання.]]></text>
+      <feedback format="html"><text><![CDATA[Таке зіставлення може бути корисним для технічної підтримки, але не показує реалізацію вимог у системі. Підказка: пригадайте, які артефакти створюються після формулювання User Story. Будь ласка, перегляньте розділ лекції, що стосується матриці простежуваності вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Команди запуску застосунку з ролями користувачів системи.]]></text>
+      <feedback format="html"><text><![CDATA[Команди запуску належать до конфігурації середовища, а ролі — до функціональних вимог; це не утворює ланцюг реалізації вимоги. Підказка: зосередьтеся на зв’язку між вимогою, кодовими компонентами та перевіркою. Будь ласка, перегляньте розділ лекції, що стосується матриці простежуваності вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Архітектурні рішення з повідомленнями про помилки API.]]></text>
+      <feedback format="html"><text><![CDATA[Обидва артефакти належать до технічної документації, але їхнє зіставлення не відображає повний шлях від потреби користувача до її перевірки. Підказка: подумайте, з якого артефакту починається рядок матриці. Будь ласка, перегляньте розділ лекції, що стосується матриці простежуваності вимог, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T5.010: Walking Skeleton</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що таке Walking Skeleton?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Перший працездатний наскрізний каркас системи без складної бізнес-логіки.]]></text>
+      <feedback format="html"><text><![CDATA[Такий каркас підтверджує, що основні частини застосунку можуть запускатися та взаємодіяти між собою. Після цього команда може поступово додавати окремі функції на стабільну основу.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Повна реалізація всіх користувацьких історій для першого релізу.]]></text>
+      <feedback format="html"><text><![CDATA[Повна реалізація функціоналу потребує бізнес-логіки та відбувається після підготовки початкової структури проєкту. Підказка: зверніть увагу, чи має каркас містити завершені функції для всіх сценаріїв. Будь ласка, перегляньте розділ лекції, що стосується розгортання початкового каркаса застосунку, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Набір діаграм, що описує архітектуру системи без запуску коду.]]></text>
+      <feedback format="html"><text><![CDATA[Діаграми допомагають спроєктувати систему, але самі не підтверджують, що її компоненти запускаються та працюють разом. Підказка: пригадайте, які базові команди має успішно виконувати готовий каркас. Будь ласка, перегляньте розділ лекції, що стосується розгортання початкового каркаса застосунку, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Окремий модуль бази даних без фронтенду та API.]]></text>
+      <feedback format="html"><text><![CDATA[Окремий технічний модуль не забезпечує наскрізної взаємодії частин системи. Підказка: подумайте, чи повинен початковий каркас проходити через усі основні архітектурні шари. Будь ласка, перегляньте розділ лекції, що стосується розгортання початкового каркаса застосунку, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
