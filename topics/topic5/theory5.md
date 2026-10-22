@@ -39,7 +39,7 @@
 
 Перш ніж створювати креслення системи, необхідно змінити сам підхід до взаємодії з моделлю: відмовитися від ручного копіювання тексту у вебчати на користь професійних консольних інструментів.
 
-### Зміна робочого інструменту: перехід від вебчату до термінальних агентів
+### Зміна робочого інструменту: перехід до термінальних агентів
 
 Традиційна робота через браузер виглядає неефективною: ви копіюєте вимоги у вікно чату, чекаєте на відповідь, вручну переносите код у файли проєкту та намагаєтеся самостійно відстежити помилки компіляції. Цей процес обриває зв'язок між файлами, швидко вичерпує оперативну пам'ять сесії та забирає багато часу.
 
@@ -78,19 +78,34 @@
 
 ```markdown
 <!-- Промпт для аудиту вимог та формування Requirements Digest -->
-Прочитай усі файли у папці docs/. Це вхідні вимоги нашого проєкту (User Stories, Acceptance Criteria, Gherkin).
-Проведи системний аналіз вимог для подальшого проєктування архітектури. Не пиши код і не обирай технології — лише аналіз.
-Сформуй звіт у docs/analysis/requirements-digest.md за такою структурою:
-1. Сутності та їхні стани: атрибути, матриця переходів станів (хто ініціює, за яких умов).
-2. Бізнес-правила та інваріанти з посиланням на конкретні User Stories (US-xx).
-3. Нефункціональні вимоги, що випливають із тексту (безпека, транзакційність, права доступу).
-4. Прогалини (Gaps) та відкриті питання: що бракує для проєктування та яка найпростіша відповідь для версії MVP.
-5. Припущення (Assumptions) для версії MVP з оцінкою ризиків (Low / Medium / High).
+Read all files in docs/ — these are the input requirements of the DevMatch project
+(context, personas, user journey, 14 user stories with acceptance criteria and
+Gherkin scenarios).
+
+Do a requirements analysis for the subsequent design. Don't design anything and
+don't choose technologies — analysis only. Write the result to
+docs/analysis/requirements-digest.md in English, in the following structure:
+
+1. Entities and their states. For each entity — the attributes explicitly mentioned
+   in the requirements, and the states with transitions (who initiates the
+   transition, under which condition).
+2. Business rules / invariants extracted from the acceptance criteria and Gherkin.
+   Each rule — with a reference to the story (US-xx) and the scenario.
+3. Non-functional requirements that follow from the text (security, concurrency,
+   access without authentication, etc.), even if they are not stated explicitly.
+4. Gaps and open questions: what the requirements lack, but without which the
+   system cannot be designed. For each — why it blocks and which answer is the
+   cheapest for the MVP.
+5. Assumptions you propose to adopt for the MVP, with a risk rating
+   (low / medium / high) if the assumption turns out to be wrong.
+
+Be specific: cite story and scenario numbers, don't paraphrase the requirements
+in your own words where you can quote them.
 ```
 
 Виявивши всі білі плями у вимогах, ми переходимо до вибору технологій, які найкраще відповідають реальним умовам вашої команди.
 
-### Архітектурні компроміси та фіксація рішень: підхід ADR
+### Архітектурні компроміси та фіксація рішень
 
 В інженерії не існує абсолютно «правильних» або «ідеальних» технологій: будь-який вибір — це завжди компроміс (trade-off). Якщо запитати мовну модель без контексту: *«Яку базу даних обрати?»*, вона запропонує розподілений кластер PostgreSQL у хмарі AWS з мікросервісами. Але якщо передати реальні обмеження: *команда з 3 студентів, дедлайн 6 тижнів, бюджет 0 грн, запуск однією командою на локальному комп'ютері*, — модель обґрунтовано запропонує вбудовану реляційну базу (SQLite через Prisma ORM) та модульний моноліт.
 
@@ -115,13 +130,60 @@
 *   **ADR-0009 (Архітектурний стиль):** шаруватий модульний моноліт (`routes` ➔ `services` ➔ `data`) із чіткою ізоляцією бізнес-правил від контролерів та інтерфейсу.
 
 ```markdown
-<!-- Промпт для вибору варіантів та генерації ADR у Plan Mode -->
-Прочитай docs/analysis/requirements-digest.md. Ми переходимо до вибору архітектури під наші обмеження:
-- Команда: 3–4 студенти з базовими знаннями TypeScript/React/Node.js, без досвіду DevOps.
-- Дедлайн: 6–8 тижнів до фінального демо.
-- Бюджет інфраструктури: 0 грн (free tiers / локальний запуск після git clone однією командою).
-Запропонуй варіанти рішень для стилю архітектури, монорепозиторію, стеку фронтенду/бекенду, бази даних, авторизації та обробки конкурентності.
-Сформуй порівняльну таблицю в docs/analysis/options.md, а після мого погодження створи окремі файли docs/adr/NNNN-*.md.
+<!-- Промпт для вибору варіантів та генерації ADR -->
+Read docs/analysis/requirements-digest.md and docs/project_context.md.
+
+We are at the design stage. Team context and constraints (this matters more
+than "best practices"):
+- team: 3–4 students, basic TypeScript / React / Node.js, no DevOps experience;
+- deadline: 6–8 weeks until the demo, in parallel with other courses;
+- allowed stack: only TypeScript, React or React Native, Node.js. No other languages;
+- infrastructure budget: 0 UAH (free tiers); local launch with one command after git clone;
+- the code will be worked on with Claude Code, so a predictable structure matters.
+
+First the plan — don't choose anything yet. Which technical decisions must be
+made before the code starts, in which order (what depends on what), and which
+options exist for each:
+0. application architecture style (layered/MVC, clean/hexagonal, modular
+   monolith, microservices — and separately for the frontend);
+1. platform: web or mobile (React or React Native) — based on the user journey;
+2. repository structure (mono/polyrepo, how to split the code);
+3. frontend: build, routing, working with server data, styles;
+4. backend: framework, validation, error format, API style;
+5. data store and ORM, with local launch and free hosting in mind;
+6. authentication — taking into account the gap from the digest;
+7. concurrency: how to guarantee the spot counter invariants (US-06, US-12);
+8. deployment and hosting.
+If you lack information for the rating — ask me before writing the plan.
+
+After I approve the plan, write, in this order:
+
+1. docs/analysis/options.md — for each decision, a table of options rated
+   against OUR constraints (+ / 0 / −), the main criterion that tips the
+   choice, and what would have to change for the choice to be different.
+   At the end — a summary table: decision → what it leans toward → main
+   criterion → ADR number.
+
+2. docs/adr/NNNN-short-name.md — one file per decision, fixing the choice:
+   2–3 options from options.md with trade-offs specifically for this team,
+   a recommendation and consequences (what becomes simpler, what becomes
+   harder, what we postpone). If you disagree with what options.md leans
+   toward — say why. Format:
+   # ADR-NNNN: Title
+   Status | Context | Options (with pros/cons) | Decision | Consequences | Related stories.
+   Add docs/adr/README.md with an index and a rule for when an ADR should be
+   written and when not. Write concisely: ADRs are read, not studied.
+
+3. docs/architecture/risks.md — a risk register in three groups: technical,
+   product (requirements/user behavior), team (deadlines, skills). For each:
+   probability and impact (low/med/high), trigger (how we will notice that
+   the risk has fired), mitigation, and where exactly it lives (component /
+   ADR). No generic phrases like "bugs are possible". Separately mark the
+   risks we consciously accept for the MVP.
+   docs/architecture/integrations.md — all external dependencies (Telegram,
+   GitHub, hosting, DB): what exactly we take from them, whether it is an
+   API integration or just a link/format, what we do if the dependency is
+   unavailable.
 ```
 
 Після фіксації технологічного стеку настає час створити суворі технічні креслення для розробників.
@@ -130,7 +192,7 @@
 
 Технічний ескіз — це набір специфікацій і діаграм, які є обов'язковим договором (контрактом) між усіма компонентами системи. Вони виключають ситуацію, коли фронтенд очікує поле `user_name`, а бекенд повертає `username`.
 
-До обов'язкового пакету архітектурної документації в папці `docs/architecture/` входять:
+До обов'язкового пакета архітектурної документації в папці `docs/architecture/` входять:
 
 1.  **Огляд системи (`overview.md`):**
     *   C4-діаграма контексту (Level 1): взаємодія системи з користувачами та зовнішніми сервісами (GitHub, Telegram).
@@ -168,14 +230,36 @@ stateDiagram-v2
 
 ```markdown
 <!-- Промпт для генерації технічних контрактів та специфікацій -->
-Прочитай docs/analysis/requirements-digest.md та всі файли docs/adr/*.md.
-Створи технічну документацію системи в docs/architecture/:
-1. overview.md — C4 діаграми (контекст і контейнери в mermaid), перелік сторінок фронтенду.
-2. domain-model.md — сутності, обмеження та діаграми станів (Mermaid State Diagrams) із посиланням на US-xx.
-3. api.md — таблиця ендпоінтів, правила доступу, коди помилок та єдиний формат ApiError.
-4. data-model.md — таблиці бази даних, зв'язки та унікальні обмеження.
-5. traceability.md — матриця: User Story ➔ Ендпоінт ➔ Сторінка ➔ Сценарій Gherkin.
-Жодного коду бізнес-логіки не пиши.
+Read docs/analysis/requirements-digest.md and all docs/adr/*.md. Create a sketch of
+the DevMatch technical solution in docs/architecture/ — four documents and one
+visual page, no application code:
+
+1. overview.md — for a new team member who needs to understand the system in
+   10 minutes: C4 level 1 (system context) and level 2 (containers) in mermaid;
+   the list of components of each container with a one-phrase responsibility;
+   the list of frontend pages mapped to stories; which external systems are
+   real integrations and which are just links.
+2. domain-model.md — for everyone who writes code or tests: entities, attributes
+   with constraints (lengths, formats — from the AC), invariants, and state machines
+   for Project, Role, Application in a mermaid stateDiagram with transition conditions.
+   Each rule — with a reference to US-xx.
+3. api.md — for the frontend and backend developer as a contract: a table
+   endpoint → story → who has access → response code; a single error format
+   and a dictionary of error codes derived from the Gherkin scenarios (400/401/403/404/409).
+   Example request/response bodies — only for 3–4 non-trivial endpoints.
+4. data-model.md — for whoever writes the DB schema: tables, fields, types, unique
+   constraints, indexes, and separately — which invariants cannot be expressed by the
+   schema and must live in the transaction code.
+5. system.html — for a team meeting or the course owner: one self-contained HTML
+   file (no external dependencies, opens from the file system) that shows the same
+   system visually — context, containers with the API layers, the end-to-end
+   scenario step by step, the three state machines, pages → stories, the nine
+   decisions. Dark and light theme. It is a picture of the markdown documents,
+   not a second source of truth: every label on it must be traceable to one of them.
+
+If during the design you see that a story is not covered or contradicts
+another — don't resolve it silently, put it in the "Open questions" section
+in overview.md.
 ```
 
 Коли контракти зафіксовано, необхідно підготувати сам репозиторій для роботи з AI-інструментами, щоб модель не втрачала фокус під час генерації коду.
@@ -209,7 +293,7 @@ stateDiagram-v2
 
 ### Каркас проєкту: розгортання Walking Skeleton
 
-**Walking Skeleton («крокуючий скелет»)** — це перший працюючий вертикальний зріз системи крізь усі архітектурні шари, в якому повністю **відсутня бізнес-логіка**.
+**Walking Skeleton («крокуючий скелет»)** — це перший працюючий вертикальний зріз системи крізь усі архітектурні шари, в якому ще **відсутня бізнес-логіка**.
 
 У каркасі проєкту:
 *   **У спільному пакеті (`packages/shared`):** описано базові Zod-схеми валідації (нормалізація нікнейму Telegram, перевірка посилань на GitHub) та системні переліки статусів (`ProjectStatus`, `ApplicationStatus`).
@@ -228,13 +312,25 @@ pnpm test        # Проходження початкових смоук-тес
 
 ```markdown
 <!-- Промпт для генерації початкового каркаса проєкту -->
-Створи початковий каркас проєкту (Walking Skeleton) на основі схвалених ADR та специфікацій.
-Без бізнес-логіки:
-1. Root: конфігурація pnpm workspaces, загальні скрипти dev/typecheck/test, .env.example.
-2. packages/shared: схеми валідації Zod та enums статусів з domain-model.md.
-3. apps/api: Express сервер, Prisma схема, ендпоінт /api/health, middleware валідації та обробник ApiError.
-4. apps/web: Vite + React, роутинг зі сторінками-заглушками для кожної User Story з overview.md.
-Після генерації запусти перевірку pnpm install, pnpm typecheck, pnpm test та виправ усі знайдені дефекти.
+Create the project skeleton from docs/adr/ and docs/architecture/. No business logic.
+
+- Root: pnpm workspaces, package.json with dev / build / typecheck / test scripts
+  that work for all packages; tsconfig.base.json; .env.example; README
+  with launch instructions in 3 commands.
+- packages/shared: zod validation schemas and status enums from domain-model.md
+  (telegram username with "@" normalization, GitHub URL, length limits for project
+  and role, Project/Role/Application statuses); vitest tests, where each test case
+  is named after the Gherkin scenario it comes from (US-01 sc.3, etc.).
+- apps/api: Express 5 + TypeScript (tsx for dev); prisma/schema.prisma from
+  data-model.md; src/app.ts with /api/health, validation middleware via shared
+  and an error handler in the format from api.md; empty routes/ services/ folders with
+  a README explaining what goes where.
+- apps/web: Vite + React + TypeScript; React Router with stubs for all pages
+  from overview.md (each — a heading and a link to the story); an api client with
+  the base URL from env; no styles except a minimal layout.
+
+After creating it, run pnpm install, pnpm typecheck, pnpm test and fix everything
+that fails. Show which files were created and what exactly was verified.
 ```
 
 Після успішного підняття каркаса команда отримує стабільне середовище, готове до покрокової реалізації фіч у наступних практичних завданнях.
