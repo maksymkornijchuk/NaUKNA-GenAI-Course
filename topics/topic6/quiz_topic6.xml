@@ -1,0 +1,261 @@
+<quiz>
+
+  <question type="multichoice">
+    <name><text>T6.001: IDE-асистенти та CLI-агенти</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яка відмінність між IDE-асистентом і термінальним AI-агентом?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[IDE-асистент допомагає з локальним написанням коду, а термінальному агенту можна делегувати комплексну задачу в репозиторії.]]></text>
+      <feedback format="html"><text><![CDATA[IDE-асистент прискорює роботу розробника під час редагування коду, тоді як CLI-агент може самостійно знаходити файли, вносити зміни та запускати перевірки в межах поставленої задачі.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[IDE-асистент працює лише з Git, а термінальний агент — лише з відкритим файлом.]]></text>
+      <feedback format="html"><text><![CDATA[Ролі інструментів описано навпаки: один із них має ширший доступ до структури репозиторію та команд середовища. Підказка: пригадайте, який інструмент працює безпосередньо в редакторі коду. Будь ласка, перегляньте розділ лекції, що стосується IDE-акселераторів і термінальних делегаторів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[IDE-асистент створює архітектуру системи, а термінальний агент лише виправляє синтаксис.]]></text>
+      <feedback format="html"><text><![CDATA[Обидва інструменти можуть допомагати з кодом, але їхня головна відмінність пов’язана не з поділом на архітектуру та синтаксис. Підказка: зверніть увагу на масштаб задачі, яку виконує кожен інструмент. Будь ласка, перегляньте розділ лекції, що стосується IDE-акселераторів і термінальних делегаторів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[IDE-асистент не використовує контекст файлів, а термінальний агент не запускає команди перевірки.]]></text>
+      <feedback format="html"><text><![CDATA[Це твердження ігнорує ключові можливості обох інструментів. Підказка: пригадайте, як IDE-асистент працює з відкритими файлами та які команди може виконувати CLI-агент. Будь ласка, перегляньте розділ лекції, що стосується IDE-акселераторів і термінальних делегаторів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.002: Вибір AI-інструмента</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Який інструмент доцільніше використати для реалізації User Story, що потребує змін у кількох файлах, запуску тестів і перевірки типів?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Термінальний AI-агент, якому можна делегувати комплексну задачу в репозиторії.]]></text>
+      <feedback format="html"><text><![CDATA[CLI-агент має доступ до структури проєкту, може знаходити пов’язані файли, вносити зміни та запускати команди перевірки. Це робить його придатним для наскрізних задач.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[IDE-асистент, який працює лише з одним виділеним фрагментом коду.]]></text>
+      <feedback format="html"><text><![CDATA[Такий інструмент корисний для точкових правок, але описана задача охоплює кілька частин репозиторію та перевірки. Підказка: зверніть увагу на масштаб роботи, яку потрібно виконати. Будь ласка, перегляньте розділ лекції, що стосується вибору між IDE-асистентами та термінальними агентами, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Вебчат, у який потрібно вручну копіювати всі файли проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[Ручне перенесення контексту ускладнює роботу зі структурою репозиторію та виконання перевірок. Підказка: пригадайте, який інструмент має прямий доступ до файлів і команд середовища. Будь ласка, перегляньте розділ лекції, що стосується вибору між IDE-асистентами та термінальними агентами, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автоматичний лінтер, який перевіряє стиль написання коду.]]></text>
+      <feedback format="html"><text><![CDATA[Лінтер допомагає виявляти порушення стилю, але не виконує комплексну реалізацію функціональності. Підказка: розрізняйте інструмент генерації та виконання задачі від інструмента автоматичної перевірки. Будь ласка, перегляньте розділ лекції, що стосується вибору між IDE-асистентами та термінальними агентами, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.003: Файл AGENTS.md</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке головне призначення файлу <code>AGENTS.md</code> у корені репозиторію?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Бути єдиним джерелом правил та інструкцій проєкту для різних AI-інструментів.]]></text>
+      <feedback format="html"><text><![CDATA[Спільний файл зменшує ризик суперечностей між інструкціями для різних інструментів і спрощує перехід команди на інший AI-сервіс.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Зберігати вихідний код усіх модулів застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[Вихідний код розміщується у відповідних папках проєкту, а цей файл описує правила роботи з ним. Підказка: пригадайте, яку проблему вирішує спільний файл інструкцій. Будь ласка, перегляньте розділ лекції, що стосується універсальної конфігурації через <code>AGENTS.md</code>, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Містити результати виконання автоматичних тестів.]]></text>
+      <feedback format="html"><text><![CDATA[Результати перевірок створюють інструменти тестування, а цей документ задає контекст для роботи AI-інструментів. Підказка: зверніть увагу на вміст обов’язкової структури <code>AGENTS.md</code>. Будь ласка, перегляньте розділ лекції, що стосується універсальної конфігурації через <code>AGENTS.md</code>, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінювати Git-гілки для окремих користувацьких історій.]]></text>
+      <feedback format="html"><text><![CDATA[Git-гілки ізолюють зміни в коді, тоді як цей файл не керує версіями та не зберігає зміни. Підказка: розрізняйте інструкції для агента і механізми контролю версій. Будь ласка, перегляньте розділ лекції, що стосується універсальної конфігурації через <code>AGENTS.md</code>, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T6.004: Vendor Lock-in</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Використання <code>AGENTS.md</code> як спільного файлу інструкцій допомагає зменшити залежність команди від одного AI-вендора.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Спільний файл правил дає змогу різним AI-інструментам використовувати однаковий контекст проєкту. Тому команда може змінити інструмент без переписування всіх основних інструкцій.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає в ігноруванні ризику залежності від конфігурації лише одного сервісу. Підказка: пригадайте, навіщо вендоро-специфічні файли мають посилатися на спільний файл правил. Будь ласка, перегляньте розділ лекції, що стосується універсальної конфігурації та Vendor Lock-in, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.005: Скіл (Skill)</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що таке скіл (Skill) у роботі з AI-агентом?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Покроковий алгоритм для виконання конкретної повторюваної інженерної задачі.]]></text>
+      <feedback format="html"><text><![CDATA[Скіл стандартизує послідовність дій агента. Наприклад, він може отримати номер User Story, прочитати пов’язані документи, сформувати план, дочекатися схвалення та запустити перевірки.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Окрема роль, що лише аналізує зміни в коді без права редагування.]]></text>
+      <feedback format="html"><text><![CDATA[Тут описано інструмент для аудиту з обмеженими правами доступу, а не алгоритм виконання задачі. Підказка: пригадайте, який механізм викликають командою на кшталт <code>/implement-story US-01</code>. Будь ласка, перегляньте розділ лекції, що стосується скілів і спеціалізованих агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Файл із результатами запуску компілятора та автотестів.]]></text>
+      <feedback format="html"><text><![CDATA[Результати перевірок показують стан коду, але не задають послідовність дій для виконання задачі. Підказка: зверніть увагу на призначення файлу <code>SKILL.md</code>. Будь ласка, перегляньте розділ лекції, що стосується скілів і спеціалізованих агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Набір прав доступу, що дозволяє змінювати будь-які файли репозиторію.]]></text>
+      <feedback format="html"><text><![CDATA[Права доступу визначають, які дії інструмент може виконувати, але не описують процес реалізації конкретної задачі. Підказка: розрізняйте алгоритм роботи та дозволи на використання інструментів. Будь ласка, перегляньте розділ лекції, що стосується скілів і спеціалізованих агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.006: Спеціалізований агент</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Що таке спеціалізований агент (Sub-agent) у роботі з AI-інструментами?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Окрема роль для конкретного виду роботи з визначеними інструкціями та правами доступу.]]></text>
+      <feedback format="html"><text><![CDATA[Агент може бути налаштований, наприклад, лише на аналіз змін у коді. Обмежені права доступу допомагають безпечно відокремити аудит від редагування файлів.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Покрокова команда для реалізації конкретної User Story.]]></text>
+      <feedback format="html"><text><![CDATA[Тут описано повторюваний алгоритм виконання задачі, а не окрему роль із власними дозволами. Підказка: пригадайте різницю між командою <code>/implement-story</code> та агентом <code>architecture-reviewer</code>. Будь ласка, перегляньте розділ лекції, що стосується скілів і спеціалізованих агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Файл із правилами проєкту для всіх AI-інструментів.]]></text>
+      <feedback format="html"><text><![CDATA[Спільний файл інструкцій задає загальний контекст проєкту, але не створює окрему роль для певного завдання. Підказка: зверніть увагу на те, що визначає дозволи на читання або редагування файлів. Будь ласка, перегляньте розділ лекції, що стосується скілів і спеціалізованих агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автоматична перевірка типів перед злиттям змін у Git.]]></text>
+      <feedback format="html"><text><![CDATA[Перевірка типів є детермінованим бар’єром якості коду, але не виконує рольового аналізу змін. Підказка: подумайте, який інструмент може читати <code>git diff</code> і формувати звіт про архітектурні порушення. Будь ласка, перегляньте розділ лекції, що стосується скілів і спеціалізованих агентів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.007: Багаторівневе код-рев’ю</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яка послідовність перевірок рекомендована перед злиттям змін, згенерованих ШІ?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Автоматичні перевірки, ручний смоук-тест, локальний аудит ШІ та рев’ю в Pull Request.]]></text>
+      <feedback format="html"><text><![CDATA[Кожен етап виявляє різні типи проблем: інструменти перевіряють код формально, людина — поведінку в інтерфейсі, а аудит і Pull Request допомагають знайти архітектурні та командні ризики.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Лише повідомлення ШІ про те, що код працює правильно.]]></text>
+      <feedback format="html"><text><![CDATA[Самооцінка моделі не є незалежною перевіркою результату й може не виявити приховані дефекти. Підказка: пригадайте, які формальні та ручні перевірки має пройти код перед злиттям. Будь ласка, перегляньте розділ лекції, що стосується багаторівневого код-рев’ю, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Лише ручний запуск застосунку в браузері без перевірки коду.]]></text>
+      <feedback format="html"><text><![CDATA[Перевірка інтерфейсу важлива, але вона не замінює перевірку типів, тестів і аналізу змін. Підказка: подумайте, які помилки можуть залишитися непомітними під час одного ручного сценарію. Будь ласка, перегляньте розділ лекції, що стосується багаторівневого код-рев’ю, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Спочатку злиття змін у <code>main</code>, а потім запуск автоматичних тестів.]]></text>
+      <feedback format="html"><text><![CDATA[Такий порядок переносить ризик неперевірених змін до основної гілки проєкту. Підказка: пригадайте, на якому етапі створюють Pull Request і проводять перевірки. Будь ласка, перегляньте розділ лекції, що стосується багаторівневого код-рев’ю, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.008: Детерміновані Guardrails</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке призначення детермінованих Guardrails під час роботи з кодом, згенерованим ШІ?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Автоматично виявляти помилки коду за допомогою перевірки типів, лінтерів і тестів.]]></text>
+      <feedback format="html"><text><![CDATA[ШІ є стохастичним інструментом і може генерувати різні варіанти коду. Детерміновані перевірки працюють за чіткими правилами та створюють надійний бар’єр для помилок.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автоматично обирати архітектурні рішення замість команди.]]></text>
+      <feedback format="html"><text><![CDATA[Автоматичні перевірки контролюють властивості коду, але не ухвалюють архітектурних рішень за людей. Підказка: пригадайте інструменти, які запускають після генерації коду. Будь ласка, перегляньте розділ лекції, що стосується детермінованих бар’єрів проти Vibe Coding, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Дозволяти ШІ змінювати тести для успішного проходження перевірок.]]></text>
+      <feedback format="html"><text><![CDATA[Зміна перевірок може приховати проблему в реалізації, а не усунути її. Підказка: зверніть увагу, який саме код має виправляти агент після невдалого тесту. Будь ласка, перегляньте розділ лекції, що стосується детермінованих бар’єрів проти Vibe Coding, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінювати ручну перевірку сценаріїв у браузері.]]></text>
+      <feedback format="html"><text><![CDATA[Автоматичні інструменти не охоплюють усіх аспектів фактичної роботи інтерфейсу для користувача. Підказка: пригадайте місце ручного смоук-тесту в багаторівневому процесі перевірки. Будь ласка, перегляньте розділ лекції, що стосується детермінованих бар’єрів проти Vibe Coding, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T6.009: Заборона редагування тестів</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Якщо згенерований ШІ код не проходить наявні автотести, агент має виправляти код реалізації, а не змінювати файли тестів.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Автотести є незалежним критерієм очікуваної поведінки. Їх зміна лише для отримання успішного статусу може приховати дефект у реалізації.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає в тому, що зміна перевірки може створити лише видимість успішного результату, не усунувши проблему в роботі застосунку. Підказка: пригадайте, який тип файлів агенту суворо заборонено редагувати, коли перевірка завершується помилкою. Будь ласка, перегляньте розділ лекції, що стосується заборони змінювати наявні автотести, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T6.010: Відповідальність інженера</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яка роль залишається за інженером під час роботи з AI-агентом?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Ухвалювати фінальні рішення щодо проєктування, валідації та схвалення змін.]]></text>
+      <feedback format="html"><text><![CDATA[ШІ може прискорювати реалізацію, але не несе відповідальності за архітектурні компроміси, ризики та якість результату. Остаточне рішення про злиття змін у проєкт завжди приймає інженер.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Повністю передати ШІ відповідальність за архітектурні рішення.]]></text>
+      <feedback format="html"><text><![CDATA[ШІ може пропонувати варіанти та допомагати з аналізом, але не може самостійно визначати важливі рішення для проєкту. Підказка: пригадайте, хто ухвалює фінальне рішення на етапі проєктування. Будь ласка, перегляньте розділ лекції, що стосується розподілу ролей між інженером і ШІ, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Довіряти повідомленню ШІ без перевірки коду та результатів.]]></text>
+      <feedback format="html"><text><![CDATA[Повідомлення моделі про завершення роботи не замінює тестування, аудит і код-рев’ю. Підказка: зверніть увагу, хто виконує фінальну валідацію перед Pull Request. Будь ласка, перегляньте розділ лекції, що стосується розподілу ролей між інженером і ШІ, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Використовувати ШІ лише для пошуку синтаксичних помилок.]]></text>
+      <feedback format="html"><text><![CDATA[Модель може допомагати не тільки з локальними виправленнями, а й із реалізацією задач у межах визначених правил. Підказка: пригадайте, який етап життєвого циклу компонента найбільше делегується агентам. Будь ласка, перегляньте розділ лекції, що стосується розподілу ролей між інженером і ШІ, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
