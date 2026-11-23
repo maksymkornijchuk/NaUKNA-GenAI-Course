@@ -1,0 +1,269 @@
+<quiz>
+
+  <question type="multichoice">
+    <name><text>T7.001: Джерело автотестів</text></name>
+    <questiontext format="html"><text><![CDATA[<p>На основі чого потрібно створювати автотести для User Story?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[На основі критеріїв приймання та сценаріїв Given-When-Then у вимогах.]]></text>
+      <feedback format="html"><text><![CDATA[Вимоги є єдиним джерелом правди для коду й тестів. Такий підхід дає змогу перевірити очікувану поведінку системи, а не випадковий результат реалізації.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[На основі логіки вже написаного коду реалізації.]]></text>
+      <feedback format="html"><text><![CDATA[Уже написаний код може містити помилкове трактування вимоги, тому тест здатен закріпити дефект замість його виявлення. Підказка: пригадайте, який артефакт існує до початку реалізації та описує очікувану поведінку системи. Будь ласка, перегляньте розділ лекції, що стосується створення тестів за вимогами, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[На основі повідомлення ШІ про завершення реалізації.]]></text>
+      <feedback format="html"><text><![CDATA[Повідомлення моделі не містить формальних умов, за якими можна незалежно перевірити роботу функції. Підказка: зверніть увагу на документи, де описано вхідні умови, дії користувача та очікуваний результат. Будь ласка, перегляньте розділ лекції, що стосується створення тестів за вимогами, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[На основі структури папок і назв файлів у репозиторії.]]></text>
+      <feedback format="html"><text><![CDATA[Структура проєкту допомагає визначити місце для тесту, але не встановлює, яку поведінку системи необхідно перевірити. Підказка: розрізняйте організацію файлів і опис функціональних очікувань. Будь ласка, перегляньте розділ лекції, що стосується створення тестів за вимогами, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T7.002: Ризик тестів за кодом</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Якщо ШІ створює тести лише на основі готового коду, він може закріпити наявну помилку як очікувану поведінку системи.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Модель може сприйняти дефект реалізації як норму та написати тест, який підтверджує неправильну поведінку. Незалежні вимоги дають змогу уникнути такої хибної впевненості.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає в припущенні, що готовий код завжди точно відображає задуману поведінку системи. Підказка: пригадайте ситуацію, коли реалізація вже містить логічний дефект, а ШІ використовує її як зразок. Будь ласка, перегляньте розділ лекції, що стосується ризику генерації тестів за готовим кодом, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T7.003: Тестова стратегія</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке головне призначення файлу <code>docs/testing-strategy.md</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Зафіксувати правила тестування для команди та AI-агента в конкретному проєкті.]]></text>
+      <feedback format="html"><text><![CDATA[Лаконічна стратегія визначає, що і чим тестують, де розміщують тести, як ізолюють дані та які перевірки мають пройти перед злиттям змін.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Зберігати детальний опис кожної помилки, знайденої під час тестування.]]></text>
+      <feedback format="html"><text><![CDATA[Результати перевірок і знайдені дефекти фіксують в іншому документі після виконання тестування. Підказка: пригадайте, який документ містить правила роботи ще до створення тестів. Будь ласка, перегляньте розділ лекції, що стосується тестової стратегії проєкту, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Містити вихідний код усіх автоматизованих тестів проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[Виконувані перевірки розміщують у тестових файлах, а цей документ описує домовленості щодо їх створення й запуску. Підказка: розрізняйте правила тестування та самі тестові скрипти. Будь ласка, перегляньте розділ лекції, що стосується тестової стратегії проєкту, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінювати ручний чек-лист для перевірки інтерфейсу.]]></text>
+      <feedback format="html"><text><![CDATA[Стратегія визначає межі й підходи до перевірки, але не містить покрокових дій для конкретного ручного сценарію. Підказка: згадайте, який артефакт використовують для перевірки візуальних деталей інтерфейсу. Будь ласка, перегляньте розділ лекції, що стосується тестової стратегії проєкту, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T7.004: Зміст тестової стратегії</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Оберіть 5 правильних варіантів. Які складові входять до критичного мінімуму тестової стратегії проєкту?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html"><text><![CDATA[Ці складові перетворюють стратегію на практичний довідник для команди та AI-агента: вони визначають межі перевірок, інструменти, порядок роботи з тестами й критерії готовності коду.]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[Скриншоти можуть бути корисними для аналізу інтерфейсу, але не визначають правила організації та запуску тестування в проєкті. Підказка: зосередьтеся на домовленостях, які допомагають створювати ізольовані, повторювані та передбачувані перевірки. Будь ласка, перегляньте розділ лекції, що стосується критичного мінімуму тестової стратегії, щоб освіжити знання.]]></text></incorrectfeedback>
+    <answer fraction="20" format="html">
+      <text><![CDATA[Мета та межі тестування: що перевіряють автоматично, а що — вручну.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[Інструменти та рівні тестування, обрані для стеку проєкту.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[Правила організації тестових файлів та їх іменування.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[Правила ізоляції й очищення тестових даних.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[Перелік перевірок, які мають пройти перед злиттям змін.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Повний набір скріншотів усіх екранів застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="truefalse">
+    <name><text>T7.005: Gherkin як тест-кейс</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Сценарії <code>Given-When-Then</code> у User Story можуть бути основою для тест-кейсів і автотестів.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html"><text><![CDATA[Формат Gherkin уже містить початкові умови, дію користувача й очікуваний результат. Тому він допомагає перетворювати вимоги на виконувані перевірки без дублювання документації.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html"><text><![CDATA[Помилка полягає в недооцінюванні структури сценарію Given-When-Then: він описує конкретну перевірку очікуваної поведінки системи. Підказка: пригадайте, який артефакт у docs/US-*.md можна безпосередньо трансформувати в код автотесту. Будь ласка, перегляньте розділ лекції, що стосується Gherkin-сценаріїв як тест-кейсів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T7.006: Автотести та ручний чекліст</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яку частину вебзастосунку доцільно перевіряти ручним чеклістом?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Візуальне відображення елементів і зручність переходів між екранами.]]></text>
+      <feedback format="html"><text><![CDATA[Візуальні деталі та зручність взаємодії часто невигідно або складно повністю перевіряти кодом. Для них використовують короткий ручний Smoke-чекліст.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Валідацію порожнього значення у полі форми.]]></text>
+      <feedback format="html"><text><![CDATA[Така поведінка має чіткий очікуваний результат і може повторювано перевірятися без участі людини. Підказка: пригадайте, до якої корзини відносять валідацію полів і коди помилок. Будь ласка, перегляньте розділ лекції, що стосується розподілу між автотестами та ручною перевіркою, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Відповідь API на некоректний HTTP-запит.]]></text>
+      <feedback format="html"><text><![CDATA[Відповідь ендпоінта має формальні параметри, які зручно перевіряти детермінованим тестовим скриптом. Підказка: зверніть увагу на приклади перевірок кодів 400, 403, 404 і 409. Будь ласка, перегляньте розділ лекції, що стосується розподілу між автотестами та ручною перевіркою, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Збереження даних користувача в тестовій базі даних.]]></text>
+      <feedback format="html"><text><![CDATA[Операції збереження даних є повторюваними та мають однозначний результат, тому їх доцільно виконувати в ізольованому тестовому середовищі. Підказка: пригадайте, які перевірки належать до бізнес-логіки й роботи з базою даних. Будь ласка, перегляньте розділ лекції, що стосується розподілу між автотестами та ручною перевіркою, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T7.007: Токеноміка тестування</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Чому для регулярної перевірки функціональності доцільно використовувати готові автотести, а не щоразу залучати AI-браузер?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Автотести можна багаторазово запускати за лічені секунди без витрат токенів.]]></text>
+      <feedback format="html"><text><![CDATA[Токени витрачаються один раз на створення тестового скрипту, а надалі детермінований тест можна запускати локально або в CI/CD необмежену кількість разів.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Автотести завжди перевіряють візуальне вирівнювання елементів точніше за людину.]]></text>
+      <feedback format="html"><text><![CDATA[Регулярний запуск скриптів не гарантує повної оцінки візуальної якості інтерфейсу. Підказка: зверніть увагу на різницю між повторюваністю запуску та перевіркою UI-деталей. Будь ласка, перегляньте розділ лекції, що стосується токеноміки тестування, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[AI-браузер не може переходити між сторінками та натискати кнопки.]]></text>
+      <feedback format="html"><text><![CDATA[Такий інструмент може виконувати дії у браузері, але кожен дослідницький прогін потребує аналізу сторінки й витрачає токени. Підказка: пригадайте, що відбувається з витратами під час кожного нового запуску AI-агента в браузері. Будь ласка, перегляньте розділ лекції, що стосується токеноміки тестування, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[AI-браузер не може виявляти помилки в роботі застосунку.]]></text>
+      <feedback format="html"><text><![CDATA[AI-браузер здатний знаходити помилки та робити скриншоти, проте цей спосіб не є економічним для частих однакових перевірок. Підказка: порівняйте одноразове дослідницьке тестування з багаторазовим запуском готового скрипту. Будь ласка, перегляньте розділ лекції, що стосується токеноміки тестування, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="matching">
+    <name><text>T7.008: Рівні тестування та застосування</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Установіть відповідність між рівнем тестування та його типовим застосуванням.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <shuffleanswers>true</shuffleanswers>
+    <subquestion format="html">
+      <text><![CDATA[Unit-тести]]></text>
+      <answer><text><![CDATA[Перевірка ізольованої бізнес-логіки, алгоритмів і граничних станів без запуску сервера чи інтерфейсу.]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[Інтеграційні API-тести]]></text>
+      <answer><text><![CDATA[Перевірка API-ендпоінтів через HTTP-запити та роботу з реальною тестовою базою даних.]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[E2E / UI-тести]]></text>
+      <answer><text><![CDATA[Перевірка найважливішого користувацького сценарію в браузері.]]></text></answer>
+    </subquestion>
+    <correctfeedback format="html"><text><![CDATA[Кожен рівень тестування має власну роль: Unit-тести швидко перевіряють окрему логіку, інтеграційні тести контролюють взаємодію компонентів через API, а E2E-тести відтворюють ключовий шлях користувача в інтерфейсі.]]></text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text><![CDATA[]]></text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text><![CDATA[Помилка виникає через змішування рівня перевірки з типом функціональності. Підказка: визначте, чи перевірка виконується для окремої функції, взаємодії через API або повного сценарію в браузері. Будь ласка, перегляньте розділ лекції, що стосується вибору рівня тестування для різних типів проєктів, щоб освіжити знання.]]></text></incorrectfeedback>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T7.009: QA-аудитор</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Яке основне завдання read-only агента <code>qa-auditor</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Зіставляти Gherkin-сценарії з тестами та виявляти прогалини або антипатерни.]]></text>
+      <feedback format="html"><text><![CDATA[QA-аудитор не редагує файли, а незалежно оцінює покриття вимог тестами та якість наявних перевірок. Зокрема, він може виявити пропущені негативні сценарії, надмірне мокування або тести без реальних перевірок.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Редагувати код реалізації, коли автотест завершується помилкою.]]></text>
+      <feedback format="html"><text><![CDATA[Режим Read-only обмежує агента читанням і аналізом, тому він не може вносити зміни до файлів. Підказка: пригадайте, які права доступу має QA-аудитор. Будь ласка, перегляньте розділ лекції, що стосується QA-агента для аудиту тестів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Створювати нові User Story на основі знайдених дефектів.]]></text>
+      <feedback format="html"><text><![CDATA[Агент аналізує відповідність тестів уже наявним вимогам, а не формує нові вимоги до продукту. Підказка: зверніть увагу, які документи він порівнює з тестовими файлами. Будь ласка, перегляньте розділ лекції, що стосується QA-агента для аудиту тестів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Запускати застосунок у браузері та перевіряти візуальне оформлення.]]></text>
+      <feedback format="html"><text><![CDATA[Візуальні деталі перевіряють ручним чеклістом або спеціальними інструментами, а QA-аудитор зосереджується на вимогах і коді тестів. Підказка: пригадайте, що є результатом роботи агента — коротка таблиця покриття та знайдених проблем. Будь ласка, перегляньте розділ лекції, що стосується QA-агента для аудиту тестів, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+  <question type="multichoice">
+    <name><text>T7.010: Mutation Check</text></name>
+    <questiontext format="html"><text><![CDATA[<p>Як перевірити, що автотест справді виявляє помилку в бізнес-логіці?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text><![CDATA[]]></text></generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Навмисно зіпсувати умову в коді та переконатися, що відповідний тест завершується помилкою.]]></text>
+      <feedback format="html"><text><![CDATA[Такий прийом перевіряє чутливість тесту до реальної зміни в логіці. Якщо після навмисного дефекту тест стає червоним, він контролює потрібну поведінку, а не створює ілюзію перевірки.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Запустити тест один раз і переконатися, що він має зелений статус.]]></text>
+      <feedback format="html"><text><![CDATA[Зелений статус показує лише те, що поточна перевірка не знайшла проблему, але не доводить її здатність реагувати на дефект. Підказка: подумайте, що має відбутися з тестом після навмисної зміни важливої умови в коді. Будь ласка, перегляньте розділ лекції, що стосується перевірки тестів навмисним псуванням коду, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Замінити перевірку в тесті на простішу, щоб він не падав.]]></text>
+      <feedback format="html"><text><![CDATA[Послаблення перевірки може приховати дефект і перетворити тест на формальність. Підказка: зосередьтеся на тому, як перевірити здатність тесту виявляти неправильну поведінку. Будь ласка, перегляньте розділ лекції, що стосується перевірки тестів навмисним псуванням коду, щоб освіжити знання.]]></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Перевірити, чи створив ШІ багато тестових файлів у репозиторії.]]></text>
+      <feedback format="html"><text><![CDATA[Кількість файлів не гарантує, що тести перевіряють важливу бізнес-логіку та реагують на її порушення. Підказка: пригадайте практичний прийом, що передбачає контрольовану зміну робочого коду. Будь ласка, перегляньте розділ лекції, що стосується перевірки тестів навмисним псуванням коду, щоб освіжити знання.]]></text></feedback>
+    </answer>
+  </question>
+
+</quiz>
